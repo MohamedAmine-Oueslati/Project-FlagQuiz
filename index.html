@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FLAG Quiz</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class='page1' style="display: none">
+    <h1 id='page1'></h1>
+    <h2>Welcome to the Country Flags Quiz</h2>
+    <h2>Are you ready to play</h2>
+    <input type="submit" class="submit" id="submit0" value="YES">
+    <span style="display: none"></span> 
+  </div>
+  <div class='all' style="display: none">
+    <h1><em>Guess the country from its flag</em></h1>
+    <div class='timer'></div>
+  <div>
+    <h1>Which flag is this?</h1>
+    <div class="div-img">
+      <img src="img/Tunisia.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio01" name="radio0" value="Tunisia"/>
+      <label for="radio01">Tunisia</label>
+
+      <input type="radio" id="radio02" name="radio0" value="Algeria"/>
+      <label for="radio02">Algeria</label>
+
+      <input type="radio" id="radio03" name="radio0" value="Libya"/>
+      <label for="radio03">Libya</label>
+
+      <input type="radio" id="radio04" name="radio0" value="Morocco"/>
+      <label for="radio04">Morocco</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Which country does this flag belong to?</h1>
+    <div class="div-img">
+      <img src="img/Italy.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio11" name="radio1" value="France"/>
+      <label for="radio11">France</label>
+
+      <input type="radio" id="radio12" name="radio1" value="Italy"/>
+      <label for="radio12">Italy</label>
+
+      <input type="radio" id="radio13" name="radio1" value="Germany"/>
+      <label for="radio13">Germany</label>
+
+      <input type="radio" id="radio14" name="radio1" value="Spain"/>
+      <label for="radio14">Spain</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Which South American country has this flag?</h1>
+    <div class="div-img">
+      <img src="img/Brazil.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio21" name="radio2" value="Bolivia"/>
+      <label for="radio21">Bolivia</label>
+
+      <input type="radio" id="radio22" name="radio2" value="Peru"/>
+      <label for="radio22">Peru</label>
+
+      <input type="radio" id="radio23" name="radio2" value="Argentina"/>
+      <label for="radio23">Argentina</label>
+
+      <input type="radio" id="radio24" name="radio2" value="Brazil"/>
+      <label for="radio24">Brazil</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Which country has this red and white flag?</h1>
+    <div class="div-img">
+      <img src="img/Canada.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio31" name="radio3" value="Mexico"/>
+      <label for="radio31">Mexico</label>
+
+      <input type="radio" id="radio32" name="radio3" value="Canada"/>
+      <label for="radio32">Canada</label>
+
+      <input type="radio" id="radio33" name="radio3" value="United States"/>
+      <label for="radio33">United States</label>
+
+      <input type="radio" id="radio34" name="radio3" value="Chile"/>
+      <label for="radio34">Chile</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Which flag is this?</h1>
+    <div class="div-img">
+      <img src="img/Australia.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio41" name="radio4" value="New Zealand"/>
+      <label for="radio41">New Zealand</label>
+
+      <input type="radio" id="radio42" name="radio4" value="Malaysia"/>
+      <label for="radio42">Malaysia</label>
+
+      <input type="radio" id="radio43" name="radio4" value="Indonesia"/>
+      <label for="radio43">Indonesia</label>
+
+      <input type="radio" id="radio44" name="radio4" value="Australia"/>
+      <label for="radio44">Australia</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>For another point, name the country which fly this flag!</h1>
+    <div class="div-img">
+      <img src="img/Iceland.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio51" name="radio5" value="Iceland"/>
+      <label for="radio51">Iceland</label>
+
+      <input type="radio" id="radio52" name="radio5" value="Finland"/>
+      <label for="radio52">Finland</label>
+
+      <input type="radio" id="radio53" name="radio5" value="Norway"/>
+      <label for="radio53">Norway</label>
+
+      <input type="radio" id="radio54" name="radio5" value="Sweden"/>
+      <label for="radio54">Sweden</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Can you tell us which flag this is?</h1>
+    <div class="div-img">
+      <img src="img/Jordan.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio61" name="radio6" value="Kuwait"/>
+      <label for="radio61">Kuwait</label>
+
+      <input type="radio" id="radio62" name="radio6" value="Jordan"/>
+      <label for="radio62">Jordan</label>
+
+      <input type="radio" id="radio63" name="radio6" value="Syria"/>
+      <label for="radio63">Syria</label>
+
+      <input type="radio" id="radio64" name="radio6" value="Yemen"/>
+      <label for="radio64">Yemen</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Grab yourself another point by telling us which flag this is!</h1>
+    <div class="div-img">
+      <img src="img/Angola.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio71" name="radio7" value="Zambia"/>
+      <label for="radio71">Zambia</label>
+
+      <input type="radio" id="radio72" name="radio7" value="Namibia"/>
+      <label for="radio72">Namibia</label>
+
+      <input type="radio" id="radio73" name="radio7" value="Angola"/>
+      <label for="radio73">Angola</label>
+
+      <input type="radio" id="radio74" name="radio7" value="Kenya"/>
+      <label for="radio74">Kenya</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>Which flag is this?</h1>
+    <div class="div-img">
+      <img src="img/Azerbaijan.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio81" name="radio8" value="Uzbekistan"/>
+      <label for="radio81">Uzbekistan</label>
+
+      <input type="radio" id="radio82" name="radio8" value="Pakistan"/>
+      <label for="radio82">Pakistan</label>
+
+      <input type="radio" id="radio83" name="radio8" value="Kazakhstan"/>
+      <label for="radio83">Kazakhstan</label>
+
+      <input type="radio" id="radio84" name="radio8" value="Azerbaijan"/>
+      <label for="radio84">Azerbaijan</label>
+    </div>
+  </div>
+
+  <div>
+    <h1>For a final point, which country has this blue and white flag?</h1>
+    <div class="div-img">
+      <img src="img/Nicaragua.png" alt="flag" />
+    </div>
+
+    <div class="box">
+      <input type="radio" id="radio91" name="radio9" value="Honduras"/>
+      <label for="radio91">Honduras</label>
+
+      <input type="radio" id="radio92" name="radio9" value="Bahamas"/>
+      <label for="radio92">Bahamas</label>
+
+      <input type="radio" id="radio93" name="radio9" value="Guatemala"/>
+      <label for="radio93">Guatemala</label>
+
+      <input type="radio" id="radio94" name="radio9" value="Nicaragua"/>
+      <label for="radio94">Nicaragua</label>
+    </div>
+  </div>
+
+  <input type="submit" class="submit" id="submit" value="Submit Answers"/>
+  <p style='display:none'>you have to select an answer for each question</p>
+  </div>
+  <div class="page2" style='display:none'>
+    <h1 id="h1"></h1>
+    <h2 id="h20"></h2>
+    <h2 id="h21"></h2>
+    <h2 id="h22"></h2>
+    <h3 id="h3"></h3>
+    <input type="submit" class="submit" id="submit1" value="Re-take the Quiz!"/>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            
+  <script>
+    
+    function fn() {
+      var name="";
+      while(name === "" || name === null){
+          name = prompt("Please enter your name:");
+      }   
+      $('.page1').css('display','block')
+      $("span").text(name)
+      $('#page1').text('Thank you '+ $("span").text() +' for entering your name')
+      }
+    name = fn();
+
+
+var time = 0
+var timer;
+    $('#submit0').click(function(){
+      $('.page1').css('display','none')
+      $('.all').css('display','block')
+      timer = setInterval(function() {
+             time = time + 1;
+             $('.timer').text('Time : ' + time + 's');
+             if (time >= 60) {
+              $('.timer').text('Time : ' + (Math.floor(time / 60)) +'m ' + (time % 60) + 's ');
+             }
+        }, 1000);
+      timer = 0
+    })
+
+    
+    var correct = ['Tunisia','Italy','Brazil','Canada','Australia','Iceland','Jordan'
+                  ,'Angola','Azerbaijan','Nicaragua']
+   
+      var counter = 0;
+      var highscore = 0;
+    $('#submit').click(function(e){
+      var quiz0 = $("input[type='radio'][name='radio0']:checked").val()
+      var quiz1 = $("input[type='radio'][name='radio1']:checked").val()
+      var quiz2 = $("input[type='radio'][name='radio2']:checked").val()
+      var quiz3 = $("input[type='radio'][name='radio3']:checked").val()
+      var quiz4 = $("input[type='radio'][name='radio4']:checked").val()
+      var quiz5 = $("input[type='radio'][name='radio5']:checked").val()
+      var quiz6 = $("input[type='radio'][name='radio6']:checked").val()
+      var quiz7 = $("input[type='radio'][name='radio7']:checked").val()
+      var quiz8 = $("input[type='radio'][name='radio8']:checked").val()
+      var quiz9 = $("input[type='radio'][name='radio9']:checked").val()
+      var answers = [quiz0,quiz1,quiz2,quiz3,quiz4,quiz5,quiz6,quiz7,quiz8,quiz9]
+      for (var i=0 ; i < answers.length ; i++) {
+        if (correct.includes(answers[i])) {
+            counter++
+        }
+      }
+      if (answers.includes(undefined)) {
+        e.preventDefault()
+        $('p').css('display','block')
+        counter = 0 ;
+      }
+      else {
+        $('#h1').text('Thank you '+$("span").text()+' for playing')
+        $('#h20').text('You have correctly answered '+counter+' of 10 questions ,with an average of : '+counter/10*100+'%')
+        $('#h21').text('for a period of '+ $('.timer').text())
+        $('.all').css('display','none')
+        $('.page2').css('display','block')
+        if (highscore > counter) {
+          $('#h22').text('Your highscore is : '+ highscore)
+        }
+        else {
+          $('#h22').text('Your highscore is : '+ counter)
+          highscore = counter ;
+        }
+        if (counter < 4) {
+          $('#h3').text('I hope no one you know saw that score.')
+        }
+        else if (counter > 8) {
+          $('#h3').text('Fantastic! You did so well and know your stuff when it comes to world flags!')
+        }
+        else {
+          $('#h3').text('Good effort! Why not have another go and see if you can get an even better score?')
+        }
+        counter = 0 ;
+      }
+    })
+
+    $('#submit1').click(function(){
+      clearInterval(timer)
+      time = 0
+      $('p').css('display','none')
+      $('.page2').css('display','none')
+      $('.all').css('display','block')
+    })
+
+  </script>
+  
+</body>
+</html>

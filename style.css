@@ -1,0 +1,171 @@
+/**
+ * Basic stuff - not really radio style related
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: 95%;
+  line-height: 1.5;
+  font-family: 'Times New Roman', serif;
+  background: #754470;
+  color: #333;
+  text-align: center;
+
+  
+}
+
+body {
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.page1,.page2 {
+  margin-left: 250px;
+  margin-right: 250px;
+  background-color: #ffbff7;
+}
+.all {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #ffbff7;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  background: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.submit
+{
+padding: 10px 20px 11px ;
+font-size: 21px ;
+background-color: #754470;
+font-weight: bold;
+text-shadow: 1px 1px #F36C8C;
+color: #ffffff;
+border-radius: 100px;
+cursor: pointer;
+
+}
+
+img {
+	display: inline-block;
+	width: 300px; 
+        margin: 5% 0%;
+}
+
+
+h1 {
+  color: #754470;
+  margin: 5% 0 0 0;
+}
+
+#page1,#h1 {
+  color: #754470;
+  margin: 15% 0 0 0;
+}
+
+p {
+  color: red;
+  font-weight:bolder;
+  font-size: 20px
+}
+
+.timer {
+  color: black;
+  font-weight:bolder;
+  position: sticky;
+  font-size: 30px;
+  top: 80px;
+  margin-left: 50px;
+  text-align: left
+}
+
+
+/*
+ Radio checked style related
+ */
+
+input[type=radio] {
+  display: none;
+}
+
+
+/*
+How it should look when hovered
+ */
+.active-label, label:focus, label:hover, label:active, input:checked + label {
+  color: #e0758e;
+}
+
+.active-label:before, label:focus:before, label:hover:before, label:active:before, input:checked + label:before {
+  background: white;
+  border-color: #e0758e;
+}
+
+
+/**
+Make labels looks better
+ */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  
+}
+
+label:first-of-type {
+  border: 0;
+}
+label:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: .2rem solid #ccc;
+}
+
+
+/**
+ * How it should look when checked
+ */
+input:checked + label:before {
+  border-color: white;
+  border: none;
+  background: #e0758e;
+}
+
+
+/**
+ * How it should look when disabled
+ */
+input:disabled + label {
+  background: #efefef;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: not-allowed;
+}
+
+input:disabled + label:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+input:disabled + label:before {
+  border-color: white;
+  background: white;
+}
